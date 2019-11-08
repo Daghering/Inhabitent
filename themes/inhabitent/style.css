@@ -105,4 +105,23 @@ footer {
   background: url("images/dark-wood.png") center no-repeat;
   background-size: 100%, cover;
   height: 200px;
-  width: 100%; }
+  width: 100%;
+  color: white; }
+
+.banner {
+  height: 400px;
+  background-size: cover; }
+
+.main-logo {
+  height: 180px;
+  width: 180px; }
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+.journal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; }
