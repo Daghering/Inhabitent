@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<h1><i class="fas fa-air-freshener"></i></h1>
+<!-- <h1><i class="fas fa-air-freshener"></i></h1> -->
+
 
 <?php if( have_posts() ) :
 

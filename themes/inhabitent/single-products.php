@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<section class = "about">
-
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -12,6 +10,7 @@
     <?php the_post_thumbnail('large');?>
     <h3><?php the_permalink();?></h3>
     <?php the_content(); ?>
+    <?php echo "$ " . get_field('price'); ?>
     
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -21,6 +20,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-</section>
+
     
 <?php get_footer();?>

@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   
+}
+
+.menu li { 
+    padding: 10px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-shop-container {
+    text-decoration: none;
+}
+
+
+
+.home-link {
+    height: 30px;
+    width: 30px;
+}
+
+h1 i {
+    float:right;
+}
