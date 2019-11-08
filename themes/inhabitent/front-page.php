@@ -3,10 +3,12 @@
 <!-- <h1><i class="fas fa-air-freshener"></i></h1> -->
 
 <section class = "banner">
-<img class="background" src="images/home-hero.jpg" width="100%" height="100%">
-       <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" >
+<img class="background" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
+<img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
 
 </section>
+<h2>SHOP STUFF</h2>
+<div class= "shop-stuff">
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
@@ -15,6 +17,7 @@
 foreach($terms as $term):?>
    <a href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></a>
     <?php endforeach; ?>
+    </div>
 
     
 
@@ -35,7 +38,7 @@ foreach($terms as $term):?>
 
     <!-- Blog posts -->
     <?php
-    $args = array('numberposts' => 3, 'order'=> 'ASC', 'orderby' =>'title');
+    $args = array('numberposts' => 5, 'order'=> 'ASC', 'orderby' =>'title');
     $postslist = get_posts($args);
     // print_r($postslist);
     foreach ($postslist as $post) : setup_postdata($post); ?>

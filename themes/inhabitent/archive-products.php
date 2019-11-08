@@ -6,13 +6,13 @@
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
+
+    <div class= product-posts>
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('large');?>
-    <h3><?php the_permalink();?></h3>
     <?php the_content(); ?>
     <?php echo "$ " . get_field('price'); ?>
-    
+    </div>
     <!-- Loop ends -->
     <?php endwhile;?>
 

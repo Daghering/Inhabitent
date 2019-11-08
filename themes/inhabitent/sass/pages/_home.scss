@@ -1,12 +1,30 @@
 .banner {
+    display: flex;
     height: 400px;
-    background-size: cover;
+    position: relative;
+
+
+  }
+
+  .background {
+    width: 100%;
+    height: 100%;
 
   }
 
   .main-logo { 
+      position: absolute;
       height: 180px;
       width: 180px;
+      bottom: 110px;
+      left: 430px;
+  }
+
+  .shop-stuff {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+
   }
 
 
