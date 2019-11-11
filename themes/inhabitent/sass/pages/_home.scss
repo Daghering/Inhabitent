@@ -1,6 +1,7 @@
 .banner {   
-    height: 400px;
+    height: 600px;
     width: 100%;
+    
 
   }
 
@@ -11,23 +12,19 @@
     object-fit: cover;
     position: absolute;
     top: 0;
-    
-
   }
 
   .main-logo { 
       position: absolute;
       height: 180px;
       width: 180px;
-      bottom: 110px;
+      bottom: 210px;
       left: 530px;
   }
 
   .shop-stuff {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-
   }
 
 

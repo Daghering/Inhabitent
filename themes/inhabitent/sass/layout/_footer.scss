@@ -9,6 +9,7 @@ footer {
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 3fr 1fr;
+  
 
   h1 {
     color: #d99054;
@@ -52,7 +53,8 @@ footer {
 }
 
 .copyright {
-  grid-column-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
   grid-row-start: 2;
   margin-right: 10px;
 

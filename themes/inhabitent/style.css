@@ -7,6 +7,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inhabitant
 */
+img {
+  width: 100%; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -76,7 +79,7 @@ html {
   z-index: 9999; }
 
 a:-webkit-any-link {
-  color: red;
+  color: #248A83;
   cursor: pointer;
   text-decoration: none; }
 
@@ -137,12 +140,13 @@ footer {
   margin-bottom: 50px; }
 
 .copyright {
-  grid-column-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
   grid-row-start: 2;
   margin-right: 10px; }
 
 .banner {
-  height: 400px;
+  height: 600px;
   width: 100%; }
 
 .background {
@@ -159,41 +163,42 @@ footer {
   position: absolute;
   height: 180px;
   width: 180px;
-  bottom: 110px;
+  bottom: 210px;
   left: 530px; }
 
 .shop-stuff {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
 
-.about img {
+.about-banner {
   display: grid;
   width: 100%;
-  position: absolute;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-  top: 0; }
+  height: 650px; }
+  .about-banner img {
+    width: 100%;
+    position: absolute;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .about-banner .about-about {
+    position: absolute;
+    Z-index: 9999;
+    top: 45%;
+    left: 38%;
+    color: white;
+    font-size: 6em;
+    text-transform: uppercase; }
 
-.about .about-about {
-  display: grid;
-  position: absolute;
-  Z-index: 9999;
-  top: 45%;
-  left: 38%;
-  color: white;
-  font-size: 6em;
-  text-transform: uppercase; }
+.about-content {
+  width: 65%;
+  margin: 0 auto; }
 
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr; }
-  .products img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
 
 .journal {
   display: grid;

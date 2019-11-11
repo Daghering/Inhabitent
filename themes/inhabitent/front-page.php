@@ -1,24 +1,26 @@
 <?php get_header(); ?>
 
 <!-- <h1><i class="fas fa-air-freshener"></i></h1> -->
-<section>
+<section >
 <div class = "banner">
 <img class="background" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
 <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
 </div>
 <h2>SHOP STUFF</h2>
 <div class= "shop-stuff">
-
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
     'hide-empty' => false,
 ));
 foreach($terms as $term):?>
-   <a href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></a>
-    <?php endforeach; ?>
-    </div>
+<div>
+<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
+   <button href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></button>
+</div>
 
-    
+    <?php endforeach; ?>
+
+</div>
 
 <?php if( have_posts( ) ) :
 
@@ -26,8 +28,8 @@ foreach($terms as $term):?>
     while( have_posts() ) :
         the_post(); ?>
 
-    <?php the_title();
-    the_content();?>
+    <!-- <?php the_title();
+    the_content();?> -->
 
       
   

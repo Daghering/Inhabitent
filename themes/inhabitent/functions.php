@@ -121,8 +121,6 @@ function inhabitent_product_types() {
  
   add_action( 'init', 'inhabitent_product_types' );
 
-//   @ini_set( 'upload_max_size' , '10M' );
-//   @ini_set( 'post_max_size', '10M');
-//   @ini_set( 'max_execution_time', '300' );
+
 ?>
 
