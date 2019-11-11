@@ -1,31 +1,59 @@
 footer {
-//   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-  background: url("images/dark-wood.png") center no-repeat;
+  background: url('images/dark-wood.png') center no-repeat;
   background-size: 100%, cover;
-  height: 200px;
+  height: 250px;
   width: 100%;
-  color:white;
-  display: flex;
-//   text-align: center;
-//   justify-content: center;
+  color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
 
-}
+  h1 {
+    color: #d99054;
+  }
 
-footer h1 {
-   color: #d99054;
+  //  img {
+  //      justify-items: center;
+  //  }
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    
+  grid-column-start: 1;
+  justify-items: center;
+  align-items: center;
+  line-height: 2em;
+  
+  span {
+    color: white;
+  }
 
+  i {
+    color: white;
+  }
 }
 
 .hours {
-    display: flex;
-    flex-direction: column;
-    
-
+  grid-column-start: 2;
+  justify-items: center;
+  align-items: center;
+  line-height: 2em;
 }
 
+.footer-icon {
+  grid-column-start: 4;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.copyright {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin-right: 10px;
+
+}

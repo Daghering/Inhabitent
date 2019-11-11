@@ -1,0 +1,43 @@
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu-shop-container {
+    grid-column-start: 3;
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+   
+}
+
+.menu li { 
+    z-index: 9999;
+
+}
+
+a:-webkit-any-link {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-shop-container {
+    text-decoration: none;
+}
+
+
+.header-nav {
+    
+    // width: 30px;
+   a { z-index: 9999;
+   }
+    
+}
+
+.home-link {
+    width: 40px;
+}
+

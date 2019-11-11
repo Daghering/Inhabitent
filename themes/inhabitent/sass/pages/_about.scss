@@ -1,0 +1,21 @@
+.about { 
+   img { 
+   display:grid;    
+   width: 100%;
+   position: absolute;
+   filter: brightness(50%);
+   top: 0;
+   }
+
+   .about-about {
+       display: grid;
+       position:absolute;
+       Z-index: 9999;
+       top: 45%;
+       left: 38%;
+       color: white;
+       font-size: 6em;
+       text-transform: uppercase;
+       
+   }
+}

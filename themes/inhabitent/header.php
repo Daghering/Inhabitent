@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body <?php body_class();?>>
+<div class="header-nav">
+<a href="/inhabitent/"><img class="home-link" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent.svg"></a>
+
 <?php wp_nav_menu(array('theme_location' => 'primary'));?>
-<img class="home-link" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent.svg">
-<h1><i class="fas fa-search"></i></h1>
-<hr/>
+</div>
+<!-- <h1><i class="fas fa-search"></i></h1> -->
+<!-- <hr/> -->
 <!-- <h1><?php bloginfo('name');?></h1> -->

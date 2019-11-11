@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
 <!-- <h1><i class="fas fa-air-freshener"></i></h1> -->
-
-<section class = "banner">
+<section>
+<div class = "banner">
 <img class="background" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
 <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
-
-</section>
+</div>
 <h2>SHOP STUFF</h2>
 <div class= "shop-stuff">
 
@@ -59,7 +58,7 @@ foreach($terms as $term):?>
         <p>No posts found</p>
 <?php endif;?>
 
-
+</section>
 
     
 <?php get_footer();?>

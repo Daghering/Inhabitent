@@ -7,14 +7,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inhabitant
 */
-figure {
-  width: 100%; }
-
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -70,94 +62,138 @@ html {
   width: 100%;
   background-color: #ffffff; }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+.header-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.menu-shop-container {
+  grid-column-start: 3; }
+  .menu-shop-container .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
 
 .menu li {
-  padding: 10px; }
+  z-index: 9999; }
 
 a:-webkit-any-link {
-  color: -webkit-link;
+  color: red;
   cursor: pointer;
   text-decoration: none; }
 
 .menu-shop-container {
   text-decoration: none; }
 
-.home-link {
-  height: 30px;
-  width: 30px; }
+.header-nav a {
+  z-index: 9999; }
 
-h1 i {
-  float: right; }
+.home-link {
+  width: 40px; }
 
 footer {
   background: url("images/dark-wood.png") center no-repeat;
   background-size: 100%, cover;
-  height: 200px;
+  height: 250px;
   width: 100%;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-footer h1 {
-  color: #d99054; }
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr; }
+  footer h1 {
+    color: #d99054; }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  grid-column-start: 1;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2em; }
+  .contact span {
+    color: white; }
+  .contact i {
+    color: white; }
 
 .hours {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  grid-column-start: 2;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2em; }
+
+.footer-icon {
+  grid-column-start: 4;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  margin-bottom: 50px; }
+
+.copyright {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin-right: 10px; }
 
 .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 400px;
-  position: relative; }
+  width: 100%; }
 
 .background {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0; }
 
 .main-logo {
   position: absolute;
   height: 180px;
   width: 180px;
   bottom: 110px;
-  left: 430px; }
+  left: 530px; }
 
 .shop-stuff {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr; }
 
+.about img {
+  display: grid;
+  width: 100%;
+  position: absolute;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  top: 0; }
+
+.about .about-about {
+  display: grid;
+  position: absolute;
+  Z-index: 9999;
+  top: 45%;
+  left: 38%;
+  color: white;
+  font-size: 6em;
+  text-transform: uppercase; }
+
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr; }
+  .products img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .journal {
   display: grid;
