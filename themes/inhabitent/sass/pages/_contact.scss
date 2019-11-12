@@ -1,17 +1,13 @@
 .find-us {
     display: grid;
     grid-template-columns: 3fr 1fr;
-
-
+    grid-template-rows: 1fr;
 }
 
-.sidebar {
-    grid-column-start: 2;
 
-    h1 {
-        // font-family: ;
-        font-weight: bold;
-    }
+
+.find-us-content {
+    grid-column-start: 1;
 }
 
 
@@ -43,7 +39,7 @@
     line-height: 2em;
 
     span {
-        font-style: bold;
+        font-weight: bold;
     }
   }
 

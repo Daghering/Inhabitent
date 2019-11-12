@@ -1,8 +1,28 @@
 .journal {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     padding: 50px;
     grid-gap: 15px;
+ 
+    h2 {
+     font-family: 'Novecento-Sans-bold';
+     font-weight: bold;
+     font-size: 20px;
+     position: absolute;
+     margin-top: 30px;
+     padding: 10px;
+     background-color: #248A83;
+     color: white;
+     text-transform: uppercase;
+    }
 
+    p {
+        grid-column-start: 1;
+    }
 }
+
+.journal-entry {
+    grid-column-start: 1
+}
+

@@ -14,7 +14,6 @@
 foreach($terms as $term):?>
 <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
-<p>Get back in nature with all the tools and toys you need to enjoy the great outdoors.</p>
    <button href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></button>
 </div>
 <?php endforeach; ?>

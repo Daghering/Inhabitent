@@ -4,24 +4,35 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
     padding: 50px;
-    
-
-    
+        
   
     img {
         height: 180px;
         width: 100%;
         object-fit: cover;
             }
-            div {
-                border: 1px solid #a1a1a1;
-            }
+            
 }
 
 .product-posts {
     height: 100%;
+        border: 1px solid #a1a1a1;
     
 
+    div {
+        display: flex;
+    }
+
+    hr {
+        border: 1px dotted;
+        color: black;
+    }
 }
+
+  h1 {
+        font-family: 'Novecento-Sans-bold';
+       text-align: center;
+
+    }
 
 

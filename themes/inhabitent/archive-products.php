@@ -1,7 +1,8 @@
 <?php get_header(); ?>
-<h2>SHOP STUFF</h2>
 
+<h1>SHOP STUFF</h1>
 <section class= "products">
+
    
 <?php if( have_posts() ) :
 
@@ -10,10 +11,12 @@
         the_post(); ?>
 
     <div class= product-posts>
-    <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('large');?>
-    <?php the_content(); ?>
+     <div>
+    <h2><?php the_title(); ?></h2>
+    <hr />
     <?php echo "$ " . get_field('price'); ?>
+    </div>
     </div>
     <!-- Loop ends -->
     <?php endwhile;?>
