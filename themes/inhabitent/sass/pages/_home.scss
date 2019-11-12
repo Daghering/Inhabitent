@@ -1,9 +1,11 @@
 .banner {   
     height: 600px;
     width: 100%;
-    
-
   }
+
+  h2 {
+    text-align: center;
+}
 
   .background {
     width: 100%;
@@ -25,9 +27,66 @@
   .shop-stuff {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+      padding: 50px;
+      div {
+        border: 1px solid #a1a1a1;
+        height: 160px;
+    }
+
+      img {
+          display: block;
+          width: 80px;
+          margin-left: auto;
+          margin-right: auto;
+
+      }
+
+      button {
+          display: block;
+          margin: 0 auto;
+      }
+  }
+
+
+  .inhabitent-journal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 50px;
+    div {
+        // border: 1px solid #a1a1a1;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
   }
 
 
 
+  .adventures  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 50px;
+
+    
+
+    div {
+        // border: 1px solid #a1a1a1;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+  }
 
 

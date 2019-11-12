@@ -2,14 +2,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 50px;
+    
+
+    
   
     img {
-        // height: 100%;
-        // object-fit: cover;
-    }
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+            }
+            div {
+                border: 1px solid #a1a1a1;
+            }
 }
 
 .product-posts {
+    height: 100%;
+    
 
 }
 

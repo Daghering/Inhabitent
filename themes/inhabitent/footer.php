@@ -4,7 +4,7 @@
     <h1 >Contact Info</h1>
     <ul>
     <li><a href="#"><i class="far fa-envelope"></i><span>info@inhabitent</span></a></li>
-    <li><a href="#"><i class="fas fa-phone"></i><span>778-456-7891</span></a></li>
+    <li><a href="#"><i class="fas fa-phone fa-rotate-90"></i><span>778-456-7891</span></a></li>
     </ul>
     <div class="icons">
     <i class="fab fa-facebook-square"></i>

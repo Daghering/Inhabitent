@@ -1,6 +1,8 @@
 <?php get_header(); ?>
+<h2>SHOP STUFF</h2>
 
 <section class= "products">
+   
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 

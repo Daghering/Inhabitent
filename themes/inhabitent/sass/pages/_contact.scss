@@ -1,0 +1,51 @@
+.find-us {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+
+}
+
+.sidebar {
+    grid-column-start: 2;
+
+    h1 {
+        // font-family: ;
+        font-weight: bold;
+    }
+}
+
+
+.contact2 {
+    grid-column-start: 1;
+    justify-items: center;
+    align-items: center;
+    line-height: 2em;
+   
+    
+    span {
+      color:#248A83;
+    }
+  
+    i {
+      
+    }
+
+    p {
+        color: black;
+
+    }
+  }
+  
+  .hours2 {
+    grid-column-start: 2;
+    justify-items: center;
+    align-items: center;
+    line-height: 2em;
+
+    span {
+        font-style: bold;
+    }
+  }
+
+  
+
