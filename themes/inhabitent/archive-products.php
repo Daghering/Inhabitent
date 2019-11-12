@@ -1,6 +1,17 @@
 <?php get_header(); ?>
 
 <h1>SHOP STUFF</h1>
+
+<?php $terms = get_terms( array(
+   'taxonomy' => 'product-type',
+   'hide_empty' => false,
+));?>
+<div class="links">
+<?php
+foreach ($terms as $term):?>
+<a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"> <?php echo $term->name ;?></a>
+<?php endforeach;?>
+</div>
 <section class= "products">
 
    
