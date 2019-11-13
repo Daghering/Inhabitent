@@ -1,52 +1,61 @@
 .products {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding: 50px;
-        
-  
-    img {
-        height: 180px;
-        width: 100%;
-        object-fit: cover;
-            }
-            
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 50px;
+  padding-top: 25px;
+
+  img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .product-posts {
-    height: 100%;
-        border: 1px solid #a1a1a1;
+  border: 1px solid #a1a1a1;
+  font-size: 14px;
+  
+  figcaption {
+      padding: 9px;
+  }
+
+  .title-price {
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    margin-top: -22px;
+   
     
-
-    div {
-        display: flex;
+    h2 {
+        background: white;
     }
+  }
 
-    hr {
-        border: 1px dotted;
-        color: black;
-        // transform: rotate(90deg);
-    }
+  hr {
+    border: 1px dotted;
+    color: black;
+    position: relative;
+    border-radius: 5px;
+  }
 }
 
-  h1 {
-        font-family: 'Novecento-Sans-bold';
-       text-align: center;
-
-    }
+h1 {
+  font-family: 'Novecento-Sans-bold';
+  text-align: center;
+}
 
 .links {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    padding-right: 300px;
-    padding-left: 300px;
-    padding-top:15px;
-    font-family: 'Novecento-Sans';
-   
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-top: 15px;
+  font-family: 'Novecento-Sans';
 }
 
 .shop-stuff-title {
-    font-size: 30px;
+  font-size: 30px;
 }

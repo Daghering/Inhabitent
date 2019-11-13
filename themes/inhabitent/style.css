@@ -340,7 +340,8 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
-  padding: 50px; }
+  padding: 50px;
+  padding-top: 25px; }
   .products img {
     height: 180px;
     width: 100%;
@@ -348,15 +349,26 @@ h2 {
        object-fit: cover; }
 
 .product-posts {
-  height: 100%;
-  border: 1px solid #a1a1a1; }
-  .product-posts div {
+  border: 1px solid #a1a1a1;
+  font-size: 14px; }
+  .product-posts figcaption {
+    padding: 9px; }
+  .product-posts .title-price {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: -22px; }
+    .product-posts .title-price h2 {
+      background: white; }
   .product-posts hr {
     border: 1px dotted;
-    color: black; }
+    color: black;
+    position: relative;
+    border-radius: 5px; }
 
 h1 {
   font-family: 'Novecento-Sans-bold';

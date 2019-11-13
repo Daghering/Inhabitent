@@ -12,6 +12,8 @@ foreach ($terms as $term):?>
 <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"> <?php echo $term->name ;?></a>
 <?php endforeach;?>
 </div>
+
+<hr style="border: 1px dashed lightgrey" />
 <section class= "products">
 
    
@@ -23,12 +25,17 @@ foreach ($terms as $term):?>
 
     <div class= product-posts>
     <?php the_post_thumbnail('large');?>
-     <div>
+   <figcaption>
+    <hr>
+     <div class = "title-price">  
     <h2><?php the_title(); ?></h2>
-    <hr />
-    <?php echo "$ " . get_field('price'); ?>
+    <h2><?php echo "$ " . get_field('price'); ?></h2>
     </div>
+    </figcaption>
+
     </div>
+
+
     <!-- Loop ends -->
     <?php endwhile;?>
 
