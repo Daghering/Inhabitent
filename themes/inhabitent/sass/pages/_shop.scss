@@ -25,9 +25,8 @@
 
     hr {
         border: 1px dotted;
-       
         color: black;
-        transform: rotate(90deg);
+        // transform: rotate(90deg);
     }
 }
 
@@ -37,4 +36,17 @@
 
     }
 
+.links {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top:15px;
+    font-family: 'Novecento-Sans';
+   
+}
 
+.shop-stuff-title {
+    font-size: 30px;
+}

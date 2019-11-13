@@ -291,20 +291,32 @@ h2 {
 .find-us {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr;
+  padding: 50px;
+  padding-top: 20px; }
+  .find-us h2 {
+    font-family: 'Novecento-Sans-bold';
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 24px; }
 
 .find-us-content {
   grid-column-start: 1; }
+  .find-us-content label span {
+    color: #d99054; }
 
 .contact2 {
   grid-column-start: 1;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
   line-height: 2em; }
   .contact2 span {
     color: #248A83; }
+  .contact2 i {
+    color: black; }
   .contact2 p {
     color: black; }
 
@@ -317,6 +329,11 @@ h2 {
   line-height: 2em; }
   .hours2 span {
     font-weight: bold; }
+
+.wpcf7-form-control.wpcf7-submit {
+  border: none;
+  color: white;
+  background-color: #248A83; }
 
 .products {
   display: grid;
@@ -339,13 +356,27 @@ h2 {
     display: flex; }
   .product-posts hr {
     border: 1px dotted;
-    color: black;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    color: black; }
 
 h1 {
   font-family: 'Novecento-Sans-bold';
   text-align: center; }
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-top: 15px;
+  font-family: 'Novecento-Sans'; }
+
+.shop-stuff-title {
+  font-size: 30px; }
 
 .journal {
   display: grid;

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>SHOP STUFF</h1>
+<h1 class="shop-stuff-title">SHOP STUFF</h1>
 
 <?php $terms = get_terms( array(
    'taxonomy' => 'product-type',

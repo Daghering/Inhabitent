@@ -75,7 +75,7 @@ function inhabitent_post_types() {
             'all_items' => 'All Products',
             'singular_name' => 'Product'
         ),
-        'menu_icon' => 'dashicons-buddicons-activity'
+        'menu_icon' => 'dashicons-products'
 
     ));
 }

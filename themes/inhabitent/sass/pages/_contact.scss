@@ -2,19 +2,36 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
+    padding: 50px;
+    padding-top: 20px;
+    
+
+    h2 {
+        font-family: 'Novecento-Sans-bold';
+        text-transform: uppercase;
+    text-align: left;
+    font-size: 24px;
+
+        
+    }
 }
 
 
 
 .find-us-content {
     grid-column-start: 1;
+
+    label span {
+        color: #d99054
+    }
 }
 
 
 .contact2 {
     grid-column-start: 1;
-    justify-items: center;
-    align-items: center;
+    justify-items: left;
+    align-items: left;
+    text-align: left;
     line-height: 2em;
    
     
@@ -23,7 +40,7 @@
     }
   
     i {
-      
+      color: black;
     }
 
     p {
@@ -43,5 +60,10 @@
     }
   }
 
+.wpcf7-form-control.wpcf7-submit {
+    border: none;
+    color: white;
+    background-color: #248A83;
+}
   
 
