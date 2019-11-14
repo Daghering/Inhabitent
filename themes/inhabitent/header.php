@@ -12,5 +12,4 @@
 <?php wp_nav_menu(array('theme_location' => 'primary'));?>
 </div>
 <!-- <h1><i class="fas fa-search"></i></h1> -->
-<hr/>
 <!-- <h1><?php bloginfo('name');?></h1> -->

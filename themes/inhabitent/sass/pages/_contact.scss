@@ -3,7 +3,12 @@
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     padding: 50px;
-    padding-top: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-top: 2px solid #e1e1e1;
+
+
+    
     
 
     h2 {
@@ -11,6 +16,7 @@
         text-transform: uppercase;
     text-align: left;
     font-size: 24px;
+    padding-top: 20px;
 
         
     }
@@ -20,6 +26,8 @@
 
 .find-us-content {
     grid-column-start: 1;
+    // border-top: solid lightgrey;
+
 
     label span {
         color: #d99054
@@ -27,38 +35,7 @@
 }
 
 
-.contact2 {
-    grid-column-start: 1;
-    justify-items: left;
-    align-items: left;
-    text-align: left;
-    line-height: 2em;
-   
-    
-    span {
-      color:#248A83;
-    }
-  
-    i {
-      color: black;
-    }
 
-    p {
-        color: black;
-
-    }
-  }
-  
-  .hours2 {
-    grid-column-start: 2;
-    justify-items: center;
-    align-items: center;
-    line-height: 2em;
-
-    span {
-        font-weight: bold;
-    }
-  }
 
 .wpcf7-form-control.wpcf7-submit {
     border: none;

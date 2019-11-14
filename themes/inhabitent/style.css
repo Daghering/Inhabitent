@@ -187,11 +187,41 @@ footer {
   grid-row-start: 2;
   margin-right: 10px; }
 
-.sidebar {
+div.sidebar {
   grid-column-start: 2;
-  top: 0; }
-  .sidebar h1 {
+  top: 0;
+  border-left: 1px solid lightgrey;
+  padding-left: 50px;
+  text-align: left; }
+  div.sidebar h1 {
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20px; }
+  div.sidebar i {
+    padding-right: 7px; }
+
+.contact2 {
+  grid-column-start: 1;
+  text-align: left;
+  line-height: 2em; }
+  .contact2 i {
+    color: black; }
+
+.sidebar-color {
+  color: #248A83; }
+
+.address-color {
+  color: black; }
+
+.hours2 {
+  grid-column-start: 2;
+  line-height: 2em;
+  text-align: left; }
+  .hours2 span {
     font-weight: bold; }
+
+button {
+  text-transform: uppercase; }
 
 .banner {
   height: 600px;
@@ -293,42 +323,20 @@ h2 {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   padding: 50px;
-  padding-top: 20px; }
+  padding-top: 0px;
+  padding-bottom: 20px;
+  border-top: 2px solid #e1e1e1; }
   .find-us h2 {
     font-family: 'Novecento-Sans-bold';
     text-transform: uppercase;
     text-align: left;
-    font-size: 24px; }
+    font-size: 24px;
+    padding-top: 20px; }
 
 .find-us-content {
   grid-column-start: 1; }
   .find-us-content label span {
     color: #d99054; }
-
-.contact2 {
-  grid-column-start: 1;
-  justify-items: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  text-align: left;
-  line-height: 2em; }
-  .contact2 span {
-    color: #248A83; }
-  .contact2 i {
-    color: black; }
-  .contact2 p {
-    color: black; }
-
-.hours2 {
-  grid-column-start: 2;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 2em; }
-  .hours2 span {
-    font-weight: bold; }
 
 .wpcf7-form-control.wpcf7-submit {
   border: none;
@@ -385,17 +393,22 @@ h1 {
   padding-right: 300px;
   padding-left: 300px;
   padding-top: 15px;
+  padding-bottom: 20px;
   font-family: 'Novecento-Sans'; }
 
 .shop-stuff-title {
-  font-size: 30px; }
+  font-size: 30px;
+  border-top: 2px solid #e1e1e1;
+  padding-top: 20px; }
 
 .journal {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   padding: 50px;
-  grid-gap: 15px; }
+  padding-top: 20px;
+  grid-gap: 15px;
+  border-top: 2px solid #e1e1e1; }
   .journal h2 {
     font-family: 'Novecento-Sans-bold';
     font-weight: bold;

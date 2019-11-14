@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <section class="find-us">
+    
     <section class = "find-us-content">
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
