@@ -24,12 +24,15 @@ foreach ($terms as $term):?>
         the_post(); ?>
 
     <div class= product-posts>
+    <a href="<?php echo get_permalink();?>">  
+
     <?php the_post_thumbnail('large');?>
    <figcaption>
     <hr>
      <div class = "title-price">  
+      
     <h2><?php the_title(); ?></h2>
-    <h2><?php echo "$ " . get_field('price'); ?></h2>
+    <h2><?php echo "$ " . get_field('price'); ?></h2></a>
     </div>
     </figcaption>
 

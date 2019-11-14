@@ -1,92 +1,99 @@
-.banner {   
-    height: 600px;
-    width: 100%;
-  }
-
+.home-page {
   h2 {
     text-align: center;
+    font-family: 'Novecento-Sans';
+    font-size: 24px;  
+}
 }
 
-  .background {
+.banner {
+  height: 600px;
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.main-logo {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  bottom: 210px;
+  left: 530px;
+}
+
+.shop-stuff {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 50px;
+  padding-top: 20px;
+  
+  div {
+    border: 1px solid #a1a1a1;
+    height: 160px;
+  }
+
+  img {
+    display: block;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    color: white;
+    background-color: #248a83;
+  }
+}
+
+.inhabitent-journal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 50px;
+  padding-top: 20px;
+
+
+  div {
+    // border: 1px solid #a1a1a1;
+  }
+  img {
     width: 100%;
-    height: 100%;
-    filter: brightness(50%);
     object-fit: cover;
-    position: absolute;
-    top: 0;
+    height: 200px;
   }
 
-  .main-logo { 
-      position: absolute;
-      height: 180px;
-      width: 180px;
-      bottom: 210px;
-      left: 530px;
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 50px;
+  padding-top: 20px;
+
+ 
+
+  div {
+    // border: 1px solid #a1a1a1;
   }
 
-  .shop-stuff {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 15px;
-      padding: 50px;
-      div {
-        border: 1px solid #a1a1a1;
-        height: 160px;
-    }
-
-      img {
-          display: block;
-          width: 80px;
-          margin-left: auto;
-          margin-right: auto;
-
-      }
-
-      button {
-          display: block;
-          margin: 0 auto;
-      }
+  button {
+    display: block;
+    margin: 0 auto;
   }
-
-
-  .inhabitent-journal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding: 50px;
-    div {
-        // border: 1px solid #a1a1a1;
-    }
-    img {
-        width: 100%;
-        object-fit: cover;
-        height: 200px;
-    }
-
-    button {
-        display: block;
-        margin: 0 auto;
-    }
-  }
-
-
-
-  .adventures  {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding: 50px;
-
-    
-
-    div {
-        // border: 1px solid #a1a1a1;
-    }
-
-    button {
-        display: block;
-        margin: 0 auto;
-    }
-  }
-
-
+}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section >
+<section class = "home-page" >
 <div class = "banner">
 <img class="background" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
 <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">

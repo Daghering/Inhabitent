@@ -12,6 +12,7 @@
     <?php the_post_thumbnail('large');?>
     </div>
     <p><?php echo wp_trim_words(get_the_content(), 50, "..."); ?></p>
+    <a href="<?php echo get_permalink();?>"> <button class="read-more">READ MORE <i class="fas fa-long-arrow-alt-right"></i></button></a>
 
     
     <!-- Loop ends -->

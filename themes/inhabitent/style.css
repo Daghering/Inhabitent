@@ -223,12 +223,14 @@ div.sidebar {
 button {
   text-transform: uppercase; }
 
+.home-page h2 {
+  text-align: center;
+  font-family: 'Novecento-Sans';
+  font-size: 24px; }
+
 .banner {
   height: 600px;
   width: 100%; }
-
-h2 {
-  text-align: center; }
 
 .background {
   width: 100%;
@@ -251,7 +253,8 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
-  padding: 50px; }
+  padding: 50px;
+  padding-top: 20px; }
   .shop-stuff div {
     border: 1px solid #a1a1a1;
     height: 160px; }
@@ -262,13 +265,17 @@ h2 {
     margin-right: auto; }
   .shop-stuff button {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: none;
+    color: white;
+    background-color: #248a83; }
 
 .inhabitent-journal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  padding: 50px; }
+  padding: 50px;
+  padding-top: 20px; }
   .inhabitent-journal img {
     width: 100%;
     -o-object-fit: cover;
@@ -282,7 +289,8 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
-  padding: 50px; }
+  padding: 50px;
+  padding-top: 20px; }
   .adventures button {
     display: block;
     margin: 0 auto; }
@@ -371,7 +379,8 @@ h2 {
             justify-content: space-between;
     margin-top: -22px; }
     .product-posts .title-price h2 {
-      background: white; }
+      background: white;
+      color: black; }
   .product-posts hr {
     border: 1px dotted;
     color: black;
@@ -422,5 +431,45 @@ h1 {
   .journal p {
     grid-column-start: 1; }
 
+.read-more {
+  border: 1px solid black;
+  color: black;
+  background-color: #ffffff; }
+
 .journal-entry {
+  grid-column-start: 1; }
+
+.single-products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-top: 2px solid #e1e1e1;
+  padding: 50px;
+  height: 350px; }
+  .single-products-grid h2 {
+    color: #d99054;
+    font-family: 'Novecento-Sans-bold';
+    font-size: 24px; }
+  .single-products-grid img {
+    height: 300px; }
+
+.single-product-image {
+  grid-column-start: 1; }
+
+.single-product-description {
+  grid-column-start: 2;
+  margin-left: 50px;
+  font-size: 12px; }
+  .single-product-description span {
+    font-family: 'Novecento-Sans-bold';
+    padding-bottom: 25px; }
+  .single-product-description p {
+    padding-top: 20px; }
+
+.single-journal {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr; }
+
+.single-journal-content {
   grid-column-start: 1; }

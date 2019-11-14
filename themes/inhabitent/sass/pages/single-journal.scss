@@ -1,0 +1,10 @@
+.single-journal {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.single-journal-content {
+    grid-column-start: 1;
+
+}
