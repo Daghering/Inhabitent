@@ -1,46 +1,32 @@
 .find-us {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 50px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    border-top: 2px solid #e1e1e1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  border-top: 2px solid #e1e1e1;
 
-
-    
-    
-
-    h2 {
-        font-family: 'Novecento-Sans-bold';
-        text-transform: uppercase;
+  h2 {
+    font-family: 'Novecento-Sans-bold';
+    text-transform: uppercase;
     text-align: left;
     font-size: 24px;
     padding-top: 20px;
-
-        
-    }
+  }
 }
-
-
 
 .find-us-content {
-    grid-column-start: 1;
-    // border-top: solid lightgrey;
+  grid-column-start: 1;
+  // border-top: solid lightgrey;
 
-
-    label span {
-        color: #d99054
-    }
+  label span {
+    color: #d99054;
+  }
 }
-
-
-
 
 .wpcf7-form-control.wpcf7-submit {
-    border: none;
-    color: white;
-    background-color: #248A83;
+  border: none;
+  color: white;
+  background-color: #248a83;
 }
-  
-

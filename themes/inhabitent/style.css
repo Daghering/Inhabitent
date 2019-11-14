@@ -116,12 +116,14 @@ body {
   .menu-shop-container .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+    .menu-shop-container .menu .search-box {
+      grid-column-start: 5; }
 
 .menu li {
   z-index: 9999; }
 
 a:-webkit-any-link {
-  color: #248A83;
+  color: #248a83;
   cursor: pointer;
   text-decoration: none; }
 
@@ -191,7 +193,7 @@ div.sidebar {
   grid-column-start: 2;
   top: 0;
   border-left: 1px solid lightgrey;
-  padding-left: 50px;
+  padding-left: 47px;
   text-align: left; }
   div.sidebar h1 {
     font-weight: bold;
@@ -208,7 +210,7 @@ div.sidebar {
     color: black; }
 
 .sidebar-color {
-  color: #248A83; }
+  color: #248a83; }
 
 .address-color {
   color: black; }
@@ -257,10 +259,12 @@ button {
   padding-top: 20px; }
   .shop-stuff div {
     border: 1px solid #a1a1a1;
-    height: 160px; }
+    font-size: 13px;
+    text-align: center;
+    padding: 10px; }
   .shop-stuff img {
     display: block;
-    width: 80px;
+    width: 60px;
     margin-left: auto;
     margin-right: auto; }
   .shop-stuff button {
@@ -349,7 +353,7 @@ button {
 .wpcf7-form-control.wpcf7-submit {
   border: none;
   color: white;
-  background-color: #248A83; }
+  background-color: #248a83; }
 
 .products {
   display: grid;
@@ -469,7 +473,22 @@ h1 {
 .single-journal {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr;
+  border-top: 2px solid #e1e1e1; }
+  .single-journal h2 {
+    font-family: 'Novecento-Sans-bold';
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #248A83;
+    color: white;
+    text-transform: uppercase; }
+  .single-journal p {
+    grid-column-start: 1; }
 
 .single-journal-content {
-  grid-column-start: 1; }
+  grid-column-start: 1;
+  padding: 50px;
+  padding-top: 30px; }

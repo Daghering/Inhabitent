@@ -14,7 +14,9 @@
 foreach($terms as $term):?>
 <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
-   <button href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></button>
+<?php echo category_description($term->term_id);?>
+ <a href="<?php echo get_home_url() . $term->slug ;?>">
+ <button href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></button></a>
 </div>
 <?php endforeach; ?>
 </div>
@@ -75,5 +77,4 @@ foreach($terms as $term):?>
 
 </section>
 
-    
 <?php get_footer();?>
