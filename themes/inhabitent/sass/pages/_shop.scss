@@ -63,3 +63,19 @@ h1 {
   border-top: 2px solid #e1e1e1;
   padding-top: 20px;
 }
+
+
+.taxonomy-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 15px;
+  padding: 50px;
+  padding-top: 25px;
+
+  img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

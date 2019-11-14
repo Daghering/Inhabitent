@@ -2,19 +2,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
- 
+  .search-box {
+    grid-column-start: 3;
+    display: flex;
+    z-index: 9999;
+    justify-content: flex-end;
+
+    #ajaxsearchlite1 {
+        width: 25%;
+    }
 }
+
 .menu-shop-container {
   grid-column-start: 3;
 
   .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      display: flex;
 
-    .search-box {
-        grid-column-start: 5;
+    li {
+        padding-right: 10px;
     }
+  }  
 
+    
   }
 }
 

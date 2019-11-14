@@ -15,8 +15,8 @@ foreach($terms as $term):?>
 <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
 <?php echo category_description($term->term_id);?>
- <a href="<?php echo get_home_url() . $term->slug ;?>">
- <button href="<?php echo "product-type/" . $term->$slug;?>"><?php echo $term->name ;?></button></a>
+ <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>">
+ <button><?php echo $term->name ;?></button></a>
 </div>
 <?php endforeach; ?>
 </div>
@@ -66,14 +66,18 @@ foreach($terms as $term):?>
 
 <h2>LATEST ADVENTURES</h2>
 <div class = "adventures">
-<?php foreach($terms as $term):?>
+<?php
+    $args = array('numberposts' => 4, 'order'=> 'ASC', 'orderby' =>'date');
+    $postslist = get_posts($args);
+    foreach ($postslist as $post) : setup_postdata($post); ?>
+     <div>
+    <?php the_post_thumbnail('large');?>
+    <?php the_title(); ?>
+    <button><?php echo $term->name ;?></button></a>
 
-<div>
-<img src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/<?php echo $term->slug;?>.jpg">
-   <button href="<?php echo "adventure-photos/" . $term->$slug;?>"><?php echo $term->name ;?></button>
-</div>
-<?php endforeach; ?>
-</div>
+    </div>
+ 
+    <?php endforeach; ?>
 
 </section>
 
