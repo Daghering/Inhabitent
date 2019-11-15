@@ -59,25 +59,29 @@ foreach($terms as $term):?>
 
     </div>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+
 
 
 <h2>LATEST ADVENTURES</h2>
 <div class = "adventures">
 <?php
-    $args = array('numberposts' => 4, 'order'=> 'ASC', 'orderby' =>'date');
+    $args = array('numberposts' => 4, 'post_type' => 'adventures', 'order'=> 'ASC', 'orderby' =>'date');
     $postslist = get_posts($args);
     foreach ($postslist as $post) : setup_postdata($post); ?>
      <div>
     <?php the_post_thumbnail('large');?>
     <?php the_title(); ?>
-    <button><?php echo $term->name ;?></button></a>
+    <a href="<?php echo get_home_url() . '/adventures/' . $term->post ;?>">
+ <button><?php echo $term->name ;?></button></a>
+    
 
     </div>
  
     <?php endforeach; ?>
+
+    <?php else : ?>
+        <p>No posts found</p>
+<?php endif;?>
 
 </section>
 

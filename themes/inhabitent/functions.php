@@ -79,6 +79,24 @@ function inhabitent_post_types() {
         'menu_icon' => 'dashicons-products'
 
     ));
+
+    register_post_type('adventures', array(
+        'has_archive' => true,
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'public' => true,
+        'labels' => array(
+            'name' => 'Adventures',
+            'add_new_items' => 'Add New Adventures',
+            'edit_item' => 'Edit Adventure',
+            'all_items' => 'All Adventures',
+            'singular_name' => 'Adventure'
+        ),
+        'menu_icon' => 'dashicons-products'
+
+    ));
+    
+
 }
 
 add_action('init', 'inhabitent_post_types');

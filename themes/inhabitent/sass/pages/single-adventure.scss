@@ -1,0 +1,29 @@
+.adventure-body {
+    display:grid;    
+    width: 100%;
+    height: 650px;
+    
+    img {
+   width: 100%;
+   position: absolute;
+   top: 0;
+   object-fit: cover;
+    }
+
+   
+}
+
+.adventure-content {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Novecento-Sans-bold';
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
