@@ -24,6 +24,20 @@ h2 {
     text-transform: uppercase;
     font-family: 'Novecento-Sans-bold';
     padding: 10px;
-    text-align: center;
     font-size: 24px;
+}
+
+h3 {
+    font-family: 'Novecento-Sans';
+    padding-bottom: 10px;
+}
+
+.adventures-social {
+    display: flex;
+
+    button {
+        border-style:1px solid black;
+        background:none;
+        
+    }
 }

@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 
 <section class = "home-page" >
+    <section>
 <div class = "banner">
 <img class="background" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
 <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
 </div>
+</section>
+
+<section>
 <h2>SHOP STUFF</h2>
 <div class= "shop-stuff">
 <?php $terms = get_terms( array(
@@ -20,8 +24,9 @@ foreach($terms as $term):?>
 </div>
 <?php endforeach; ?>
 </div>
+</section> 
 
-
+<section>
 <h2>INHABITENT JOURNAL</h2>
  <div class= "inhabitent-journal">
 <?php if( have_posts( ) ) :
@@ -45,23 +50,29 @@ foreach($terms as $term):?>
     $postslist = get_posts($args);
     // print_r($postslist);
     foreach ($postslist as $post) : setup_postdata($post); ?>
-     <div>
+     <section>
     <?php the_post_thumbnail('large');?>
+    <div>
         <?php the_date(); ?>
         <br />
         <?php the_title(); ?>
-        <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?>
+        <!-- <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?> -->
+   
+    <section>
+    <a href="<?php echo get_permalink();?>"><button>Read entry</button></a>
+    </section>
+
     </div>
- 
+    </section>
     <?php endforeach; ?>
 
     <!-- End of blogs -->
 
-    </div>
+    </section>
+    
 
 
-
-
+<section>
 <h2>LATEST ADVENTURES</h2>
 <div class = "adventures">
 <?php
@@ -70,14 +81,18 @@ foreach($terms as $term):?>
     foreach ($postslist as $post) : setup_postdata($post); ?>
      <div>
     <?php the_post_thumbnail('large');?>
-    <?php the_title(); ?>
-    <a href="<?php echo get_home_url() . '/adventures/' . $term->post ;?>">
- <button><?php echo $term->name ;?></button></a>
+    <p><?php the_title(); ?></p>
+    <section>
+    <a href="<?php echo get_permalink();?>"><button>Read More</button></a>
+    </section>
     
-
     </div>
- 
+
     <?php endforeach; ?>
+
+    <section>
+    <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
+    </section>
 
     <?php else : ?>
         <p>No posts found</p>

@@ -78,13 +78,15 @@
 
   button {
     display: block;
-    margin: 0 auto;
+    border-style:1px solid black;
+    background:none;
   }
 }
 
 .adventures {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 15px;
   padding: 50px;
   padding-top: 20px;
@@ -92,14 +94,20 @@
  img {
    width: 100%;
    height: 180px;
+  //  position: absolute;
+   object-fit: cover;
  }
 
   div {
     // border: 1px solid #a1a1a1;
   }
-
   button {
     display: block;
-    margin: 0 auto;
+    border-style:1px solid white;
+    background:none;
+  }
+
+  p {
+    // position: absolute;
   }
 }

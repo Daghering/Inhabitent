@@ -8,19 +8,19 @@
        <div class ="adventure-body">
    <?php the_post_thumbnail('large');?>
    </div>
-   <h2><?php the_title(); ?></h2>
-   
-
           <section class ="adventure-content"> 
+          <h2><?php the_title(); ?></h2>
          <h3> <?php the_author(); ?> </h3> 
-          <?php the_content(); ?></section>
-   <div class="adventures-links">
+          <?php the_content(); ?>
+          <div class="adventures-links">
        <ul class="adventures-social">
-           <li><i class="fab fa-facebook-f"></i> Like </li>
-           <li><i class="fab fa-twitter"></i> tweet </li>
-           <li><i class="fab fa-pinterest"></i> pin </li>
+           <button><li><i class="fab fa-facebook-f"></i> Like </li></button>
+           <button><li><i class="fab fa-twitter"></i> tweet </li></button>
+           <button><li><i class="fab fa-pinterest"></i> pin </li></button>
        </ul>
    </div>
+        </section>
+   
        
    
    <!-- Loop ends -->
