@@ -147,8 +147,8 @@ a:-webkit-any-link {
 .home-link {
   width: 40px; }
 
-#ajaxsearchliteres1.vertical.wpdreams_asl_results.asl_w.asl_r.asl_r_1.asl_an_fadeInDrop {
-  left: 1023px; }
+#ajaxsearchliteres1 {
+  margin-left: -115px; }
 
 footer {
   background: url("images/dark-wood.png") center no-repeat;
@@ -209,6 +209,8 @@ div.sidebar {
   border-left: 1px solid lightgrey;
   padding-left: 47px;
   text-align: left; }
+  div.sidebar .archive-date {
+    color: #248a83; }
   div.sidebar h1 {
     font-weight: bold;
     text-align: left;
@@ -306,8 +308,8 @@ button {
 
 .adventures {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 15px;
   padding: 50px;
   padding-top: 20px; }
