@@ -24,14 +24,14 @@
     color: #248a83;
     text-align: left;
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .sidebar {
     grid-column-start: 2;
     // border-top: 1px solid #a1a1a1;
     h1 {
-        color: black;
+      color: black;
     }
   }
 
@@ -39,21 +39,19 @@
     color: black;
     background-color: white;
     font-size: 16px;
-    padding: 5px 10px;
-    border-style: 1px solid black;
-
-    
+    margin-top: 10px;
+    padding: 7px;
+    border: 1px solid black;
   }
 
   button.search-button {
     background-color: #248a83;
     color: white;
 
-    button.search-button:nth-child(1) {
-        background-color: grey;
-      }
     
-
+  }
 }
-}
 
+#grey-button {
+    background-color: grey;
+  }

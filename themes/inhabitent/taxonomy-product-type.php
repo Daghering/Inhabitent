@@ -1,4 +1,20 @@
 <?php get_header(); ?>
+<div class="taxonomy-product-type-header">
+
+<?php
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+$phrase  = $term->slug;
+$healthy = ("STUFF");
+$yummy   = ("");
+$output = str_replace($healthy, $yummy, $phrase);?>
+
+<h1><?php echo $output;?></h1>
+<?php echo category_description($term->term_id);?>
+
+</div>
+
+<hr style = "border: 1px dashed lightgrey;">
+
 <section class = "taxonomy-products">
 <?php if( have_posts() ) :
 
@@ -6,13 +22,6 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    <!-- <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail('large');?>
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
-    <?php echo "$ " . get_field('price'); ?> -->
-
-
     <div class= product-posts>
     <a href="<?php echo get_permalink();?>">  
 

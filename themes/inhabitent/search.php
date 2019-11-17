@@ -31,7 +31,7 @@
 <hr>
 
 <section class="search-button">
-    <button class="search-button">1</button>
+    <button id="grey-button" class="search-button">1</button>
     <button class="search-button">2</button>
     <button class="search-button">Next  <i class="fas fa-long-arrow-alt-right"></i></button>
 </section>

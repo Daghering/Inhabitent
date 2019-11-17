@@ -30,7 +30,6 @@ foreach ($terms as $term):?>
    <figcaption>
     <hr>
      <div class = "title-price">  
-      
     <h2><?php the_title(); ?></h2>
     <h2><?php echo "$ " . get_field('price'); ?></h2></a>
     </div>
