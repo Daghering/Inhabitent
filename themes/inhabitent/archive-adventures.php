@@ -4,19 +4,27 @@
 <div class="adventure-title">
    <h2>Latest Adventures</h2>
 </div>
-<div class="adventures-container">
-<?php if( have_posts() ) :
-//The WordPress Loop: loads post content
-   while( have_posts() ) :
-       the_post(); ?>
+<section class="adventures-container">
+
+
+<?php
+    $args = array( 'numberposts' => 4, 'post_type' => 'adventures', 'order' => 'ASC', 'orderby' => 'date');
+    $postslist = get_posts( $args );
+    foreach ($postslist as $post): setup_postdata($post);?>
+
 <div class="adventures-posts">
-   <p><?php the_title(); ?></p>
+    <div>
    <?php the_post_thumbnail('large');?>
-   <a href="<?php the_permalink(); ?>" class="btn-transparent-btn">Read more</a>
+   <p><?php the_title(); ?></p>
+
+   <section>
+   <a href="<?php the_permalink(); ?>" class="btn-transparent-btn">READ MORE</a>
+   </section>
+   </div>
+
 </div>
-   <?php endwhile;?>
-<?php else : ?>
-       <p>No posts found</p>
-<?php endif;?>
-</div>
+
+   <?php endforeach;?>
+
+</section>
 <?php get_footer();?>

@@ -14,6 +14,13 @@
     <h2><?php the_title(); ?></h2>
     <span><?php echo "$ " . get_field('price'); ?></span>
     <?php the_content(); ?>
+    <div class="adventures-links">
+       <ul class="adventures-social">
+           <button><li><i class="fab fa-facebook-f"></i> Like </li></button>
+           <button><li><i class="fab fa-twitter"></i> tweet </li></button>
+           <button><li><i class="fab fa-pinterest"></i> pin </li></button>
+       </ul>
+   </div>
     </div>
     
     <!-- Loop ends -->
