@@ -90,14 +90,15 @@ foreach($terms as $term):?>
 
     <?php endforeach; ?>
 
-    <section>
-    <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
-    </section>
+   
 
     <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
 
 </section>
+<section class = "more-adventures-button">
+    <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
+    </section>
 
 <?php get_footer();?>

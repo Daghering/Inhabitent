@@ -18,12 +18,17 @@
     margin: 0 auto;
     line-height: 1.5em;
     padding-bottom: 15px;
+
+    p {
+        padding-bottom: 15px;
+    }
 }
 
 h2 {
     text-transform: uppercase;
     font-family: 'Novecento-Sans-bold';
     padding: 10px;
+    padding-left: 0px;
     font-size: 24px;
 }
 
@@ -34,10 +39,16 @@ h3 {
 
 .adventures-social {
     display: flex;
+    padding: 15px;
+    padding-top: 0px;
+    padding-left: 0px;
 
     button {
         border-style:1px solid black;
         background:none;
         
+        li {
+            padding: 5px;
+        }
     }
 }

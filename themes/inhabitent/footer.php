@@ -15,13 +15,13 @@
 
     <section class ="hours">
     <h1 >Business Hours</h1>
-    <p>Monday-Friday: 9am to 5pm</p>
-    <p>Saturday: 10am to 2pm</p>
-    <p>Sunday: Closed</p>
+    <p><span>Monday-Friday:</span> 9am to 5pm</p>
+    <p><span>Saturday:</span> 10am to 2pm</p>
+    <p><span>Sunday:</span> Closed</p>
     </section>
 
     <section class ="copyright">
-        <h3>COPYRIGHT ©2016 INHABITENT</h3>
+        <h3>COPYRIGHT ©2019 INHABITENT</h3>
     </section>
 
 <img class="footer-icon" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-text.svg">

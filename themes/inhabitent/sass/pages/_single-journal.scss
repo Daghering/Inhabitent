@@ -27,6 +27,22 @@
   padding: 50px;
   padding-top: 30px;
 
+  p {
+    padding-bottom: 10px;
+  }
+
+  span { 
+   color: #248A83;
+  }
+
+  .single-journal-tags {
+    display: flex;
+
+    p {
+      padding-right: 20px;
+    }
+  }
+
   
 }
 

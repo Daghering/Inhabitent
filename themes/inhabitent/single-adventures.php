@@ -11,7 +11,7 @@
           <section class ="adventure-content"> 
           <h2><?php the_title(); ?></h2>
          <h3> <?php the_author(); ?> </h3> 
-          <?php the_content(); ?>
+         <p> <?php the_content(); ?></p>
           <div class="adventures-links">
        <ul class="adventures-social">
            <button><li><i class="fab fa-facebook-f"></i> Like </li></button>
