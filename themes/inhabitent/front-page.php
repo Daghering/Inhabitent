@@ -50,12 +50,12 @@ foreach($terms as $term):?>
     $postslist = get_posts($args);
     // print_r($postslist);
     foreach ($postslist as $post) : setup_postdata($post); ?>
-     <section>
+     <section class="journal-div">
     <?php the_post_thumbnail('large');?>
     <div>
         <?php the_date(); ?>
         <br />
-        <?php the_title(); ?>
+        <h3><?php the_title(); ?></h3>
         <!-- <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?> -->
    
     <section>

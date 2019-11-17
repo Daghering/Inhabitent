@@ -238,6 +238,43 @@ div.sidebar {
   .hours2 span {
     font-weight: bold; }
 
+.search-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  border-top: 1px solid #e1e1e1; }
+  .search-grid h4 {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Novecento-Sans-bold'; }
+  .search-grid .search-content {
+    grid-column-start: 1; }
+  .search-grid h1 {
+    font-family: 'Novecento-Sans-bold';
+    text-transform: uppercase;
+    color: #248a83;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px; }
+  .search-grid .sidebar {
+    grid-column-start: 2; }
+    .search-grid .sidebar h1 {
+      color: black; }
+  .search-grid button {
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-style: 1px solid black; }
+  .search-grid button.search-button {
+    background-color: #248a83;
+    color: white; }
+    .search-grid button.search-button button.search-button:nth-child(1) {
+      background-color: grey; }
+
 button {
   text-transform: uppercase; }
 
@@ -296,6 +333,11 @@ button {
   grid-gap: 15px;
   padding: 50px;
   padding-top: 20px; }
+  .inhabitent-journal h3 {
+    color: #248a83;
+    font-family: 'Novecento-Sans-bold'; }
+  .inhabitent-journal .journal-div {
+    border: 1px solid #a1a1a1; }
   .inhabitent-journal img {
     width: 100%;
     -o-object-fit: cover;
@@ -309,7 +351,7 @@ button {
 .adventures {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 15px;
   padding: 50px;
   padding-top: 20px; }
@@ -318,6 +360,26 @@ button {
     height: 180px;
     -o-object-fit: cover;
        object-fit: cover; }
+  .adventures div:nth-child(1) {
+    height: 100%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .adventures div:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  .adventures div:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2; }
+  .adventures div:nth-child(4) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2; }
   .adventures button {
     display: block;
     border-style: 1px solid white;
