@@ -15,15 +15,18 @@
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
     'hide-empty' => false,
-));
-foreach($terms as $term):?>
+));?>
+<?php foreach($terms as $term):?>
+
 <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
 <?php echo category_description($term->term_id);?>
  <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>">
  <button><?php echo $term->name ;?></button></a>
 </div>
+
 <?php endforeach; ?>
+
 </div>
 </section> 
 
@@ -54,10 +57,9 @@ foreach($terms as $term):?>
      <section class="journal-div">
     <?php the_post_thumbnail('large');?>
     <div>
-        <?php the_date(); ?>
+    <?php echo the_date() . ' / ';?><?php echo comments_number();?>
         <br />
         <h3><?php the_title(); ?></h3>
-        <!-- <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?> -->
    
     <section>
     <a href="<?php echo get_permalink();?>"><button>Read entry</button></a>

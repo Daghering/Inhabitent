@@ -325,10 +325,11 @@ button {
   padding-bottom: 40px; }
   .shop-stuff div {
     border: 1px solid #a1a1a1;
-    height: 180px;
-    font-size: 13px;
+    height: 220px;
+    font-size: 17px;
     text-align: center;
-    padding: 10px; }
+    padding: 10px;
+    padding-bottom: 0px; }
   .shop-stuff img {
     display: block;
     width: 60px;
@@ -340,7 +341,8 @@ button {
     margin: 0 auto;
     border: none;
     color: white;
-    background-color: #248a83; }
+    background-color: #248a83;
+    margin-top: 10px; }
 
 .inhabitent-journal {
   display: grid;
@@ -351,12 +353,14 @@ button {
   padding-bottom: 40px; }
   .inhabitent-journal h3 {
     color: #248a83;
-    font-family: 'Novecento-Sans-bold'; }
+    font-family: 'Novecento-Sans-bold';
+    font-size: 28px; }
   .inhabitent-journal .journal-div {
     border: 1px solid #a1a1a1; }
     .inhabitent-journal .journal-div div {
       padding-left: 5px;
-      padding-bottom: 5px; }
+      padding-bottom: 5px;
+      height: 175px; }
   .inhabitent-journal img {
     width: 100%;
     -o-object-fit: cover;
@@ -545,14 +549,15 @@ button {
     height: 180px;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    padding-bottom: 5px; }
 
 .product-posts {
   border: 1px solid #a1a1a1;
   font-size: 14px; }
   .product-posts figcaption {
-    padding: 9px; }
-  .product-posts .title-price {
+    padding: 10px; }
+  .product-posts .title-price a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -561,12 +566,13 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: -22px; }
-    .product-posts .title-price h2 {
+    .product-posts .title-price a h2 {
       background: white;
       color: black;
       font-size: 12px;
       font-family: 'Merriweather-light';
-      padding: 0px; }
+      padding: 5px;
+      padding-top: 0px; }
   .product-posts hr {
     border: 1px dotted;
     color: black;

@@ -38,11 +38,11 @@
 
   div {
     border: 1px solid #a1a1a1;
-    height: 180px;
-    // width: 100%;
-    font-size: 13px;
+    height: 220px;
+    font-size: 17px;
     text-align: center;
     padding: 10px;
+    padding-bottom: 0px;
   }
 
   img {
@@ -59,6 +59,7 @@
     border: none;
     color: white;
     background-color: #248a83;
+    margin-top: 10px;
   }
 }
 
@@ -70,9 +71,11 @@
   padding-top: 20px;
   padding-bottom: 40px;
 
+
   h3 {
     color: #248a83;
     font-family: 'Novecento-Sans-bold';
+    font-size: 28px;
   }
 
   .journal-div {
@@ -81,6 +84,7 @@
     div {
       padding-left: 5px;
       padding-bottom: 5px;
+      height: 175px;
     }
   }
   img {

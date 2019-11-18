@@ -10,6 +10,7 @@
     height: 180px;
     width: 100%;
     object-fit: cover;
+    padding-bottom: 5px;
   }
 }
 
@@ -18,14 +19,15 @@
   font-size: 14px;
   
   figcaption {
-      padding: 9px;
+      padding: 10px;
   }
 
-  .title-price {
+  .title-price a {
     display: flex;
     position:relative;
     justify-content: space-between;
     margin-top: -22px;
+  
    
     
     h2 {
@@ -33,7 +35,9 @@
         color:black;
         font-size: 12px;
         font-family: 'Merriweather-light';
-        padding: 0px;
+        padding: 5px;
+        padding-top: 0px;
+      
     }
   }
 

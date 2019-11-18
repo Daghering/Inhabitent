@@ -43,6 +43,33 @@ function my_login_logo_url() {
 
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
+//header color change
+
+function header_color() {
+    if ( !is_page( array( 'Home', 'About' ) ) && !is_singular('adventures') ) { ?>
+    
+        <style>
+        .header-nav a {
+            color: white;
+        }
+        </style>
+    
+    <?php
+    } else { ;?>
+    
+        <style>
+        
+       .header-nav a {
+            color: #248a83;
+        }
+        </style>
+    
+    <?php }
+}
+    
+    add_action( 'wp', 'header_color' );
+    
+//end of header color change
 
 function inhabitent_widgets() {
     register_sidebar( array(
