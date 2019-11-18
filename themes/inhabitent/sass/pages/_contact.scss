@@ -4,7 +4,7 @@
   grid-template-rows: 1fr;
   padding: 50px;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   border-top: 2px solid #e1e1e1;
 
   h2 {
@@ -24,9 +24,30 @@
     color: #d99054;
   }
 }
+.wpcf7-form {
+
+ 
 
 .wpcf7-form-control.wpcf7-submit {
   border: none;
   color: white;
   background-color: #248a83;
+  padding: 7px;
+  margin-bottom: 80px;
+  margin-top: 15px;
+  
 }
+
+input {
+  background-color: #f0f0f0;
+  border-style: none;
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+  background-color: #f0f0f0;
+  border-style: none;
+}
+
+}
+
+

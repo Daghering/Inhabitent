@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <section class = "home-page" >
+
     <section>
 <div class = "banner">
 <img class="background" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
@@ -71,24 +72,32 @@ foreach($terms as $term):?>
     </section>
     
 
+    <h2>LATEST ADVENTURES</h2>
+<section class = "adventures-frontpage">
 
-<section>
-<h2>LATEST ADVENTURES</h2>
-<div class = "adventures">
+
 <?php
     $args = array('numberposts' => 4, 'post_type' => 'adventures', 'order'=> 'ASC', 'orderby' =>'date');
     $postslist = get_posts($args);
     foreach ($postslist as $post) : setup_postdata($post); ?>
-     <div>
+     <section class="adventures-homeposts">
+         <div>
     <?php the_post_thumbnail('large');?>
     <p><?php the_title(); ?></p>
-    <section>
+   
     <a href="<?php echo get_permalink();?>"><button>Read More</button></a>
+   
+    </div>
+    
     </section>
     
-    </div>
-
     <?php endforeach; ?>
+   
+</section>
+
+<section class = "more-adventures-button">
+    <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
+    </section>
 
    
 
@@ -96,9 +105,8 @@ foreach($terms as $term):?>
         <p>No posts found</p>
 <?php endif;?>
 
-</section>
-<section class = "more-adventures-button">
-    <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
     </section>
+
+
 
 <?php get_footer();?>
