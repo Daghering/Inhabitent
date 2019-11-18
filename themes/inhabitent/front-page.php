@@ -57,7 +57,7 @@
      <section class="journal-div">
     <?php the_post_thumbnail('large');?>
     <div>
-    <?php echo the_date() . ' / ';?><?php echo comments_number();?>
+    <?php echo get_the_date() . ' / ';?><?php echo get_comments_number() . ' Comments ';?>
         <br />
         <h3><?php the_title(); ?></h3>
    

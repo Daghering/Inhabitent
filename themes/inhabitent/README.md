@@ -1,6 +1,6 @@
 # Inhabitent
 
-A multipage wordpress website built for a company that sells outdoor products.
+A custom WordPress template website.
 
 
 ## Technologies Used

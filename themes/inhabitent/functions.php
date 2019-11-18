@@ -48,27 +48,34 @@ add_filter( 'login_headerurl', 'my_login_logo_url' );
 function header_color() {
     if ( !is_page( array( 'Home', 'About' ) ) && !is_singular('adventures') ) { ?>
     
-        <style>
+<style>
         .header-nav a {
-            color: white;
+            color: #248a83;
+        }
+    
+        .home-link {
+            display: none;
         }
         </style>
-    
     <?php
     } else { ;?>
     
         <style>
         
        .header-nav a {
-            color: #248a83;
+            color: white;
         }
-        </style>
+
+        .home-link2 {
+            display: none;
+        }
+ </style>
     
-    <?php }
+<?php }
 }
     
     add_action( 'wp', 'header_color' );
-    
+
 //end of header color change
 
 function inhabitent_widgets() {

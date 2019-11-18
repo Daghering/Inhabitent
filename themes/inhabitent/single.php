@@ -7,6 +7,7 @@
     <div class = "single-journal-content">
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('large');?>
+    <h3><?php echo get_the_date() . ' / ';?><?php echo get_comments_number() . ' Comments ' . ' / ' . ' By ';?><?php echo get_the_author()?></h3>
     <p><?php the_content(); ?></p>
     <div class="single-journal-tags">
     <p>POSTED IN <i class="fas fa-long-arrow-alt-right"></i><span> CONTESTS</span></p>

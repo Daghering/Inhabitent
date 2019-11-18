@@ -16,6 +16,12 @@
   padding-bottom: 80px;
   border-top: 2px solid #e1e1e1;
 
+  div:nth-child(2) {
+    a.btn-transparent-btn {
+      bottom: 170px;
+    }
+  }
+
   .adventures-posts {
     div {
       position: relative;
@@ -35,7 +41,7 @@
       color: white;
       top: 45px;
       left: 20px;
-      font-size: 44px;
+      font-size: 55.5px;
       line-height: 1.2em;
       z-index: 9999;
     }
@@ -47,8 +53,8 @@
       font-family: 'Novecento-Sans';
       border: 1px solid white;
       left: 25px;
-      bottom: 280px;
-      padding: 7px;
+      bottom: 220px;
+      padding: 10px;
     }
   }
 }

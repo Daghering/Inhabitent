@@ -17,6 +17,20 @@
     text-transform: uppercase;
    }
 
+   h3 {
+    
+      font-family: 'Novecento-Sans-bold';
+      font-weight: bold;
+      font-size: 12px;
+      position: absolute;
+      padding: 10px;
+      background-color: #248A83;
+      color: white;
+      text-transform: uppercase;
+     margin-left: 507.7px;
+     margin-top: -50.5px;
+   }
+
    p {
        grid-column-start: 1;
    }
@@ -27,8 +41,13 @@
   padding: 50px;
   padding-top: 30px;
 
+  img {
+    padding-bottom: 10px;
+  }
+
   p {
     padding-bottom: 10px;
+    padding-top: 10x;
   }
 
   span { 

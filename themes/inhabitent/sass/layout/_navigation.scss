@@ -9,25 +9,21 @@
     justify-content: flex-end;
 
     #ajaxsearchlite1 {
-        width: 30%;
-        height: 65%;    
+      width: 30%;
+      height: 65%;
     }
+  }
 
-    
-}
+  .menu-shop-container {
+    grid-column-start: 3;
 
-.menu-shop-container {
-  grid-column-start: 3;
-
-  .menu {
+    .menu {
       display: flex;
 
-    li {
+      li {
         padding-right: 10px;
+      }
     }
-  }  
-
-    
   }
 }
 
@@ -36,7 +32,6 @@
 }
 
 a:-webkit-any-link {
-  color: #248a83;
   cursor: pointer;
   text-decoration: none;
 }
@@ -53,16 +48,22 @@ a:-webkit-any-link {
 
 .home-link {
   width: 40px;
+  grid-column-start: 1;
+}
+
+.home-link2 {
+    width: 40px;
+    grid-column-start: 1;
 }
 
 #ajaxsearchliteres1 {
-    margin-left: -115px;
- }
+  margin-left: -115px;
+}
 
- a {
-     cursor: pointer;
- }
+a {
+  cursor: pointer;
+}
 
- button {
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
