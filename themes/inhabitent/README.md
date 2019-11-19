@@ -18,6 +18,10 @@ PHP
 
 ## Install 
 
+Ensure you have Node.js installed first.
+
+### Dependencies
+
 $ npm install
 
 gulp ^4.0.2

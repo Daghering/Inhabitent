@@ -61,7 +61,6 @@ function header_color() {
     } else { ;?>
     
         <style>
-        
        .header-nav a {
             color: white;
         }
