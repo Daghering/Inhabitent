@@ -208,7 +208,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 120px;
+  margin-right: 140px;
   margin-bottom: 50px; }
 
 .copyright {
@@ -489,7 +489,7 @@ button {
        object-fit: cover; }
   .about-banner .about-about {
     position: absolute;
-    Z-index: 9999;
+    z-index: 9999;
     top: 45%;
     left: 38%;
     color: white;
@@ -780,7 +780,7 @@ h1 {
     position: absolute;
     margin-top: 30px;
     padding: 10px;
-    background-color: #248A83;
+    background-color: #248a83;
     color: white;
     text-transform: uppercase; }
   .single-journal h3 {
@@ -789,7 +789,7 @@ h1 {
     font-size: 12px;
     position: absolute;
     padding: 10px;
-    background-color: #248A83;
+    background-color: #248a83;
     color: white;
     text-transform: uppercase;
     margin-left: 507.7px;
@@ -807,7 +807,7 @@ h1 {
     padding-bottom: 10px;
     padding-top: 10x; }
   .single-journal-content span {
-    color: #248A83; }
+    color: #248a83; }
   .single-journal-content .single-journal-tags {
     display: -webkit-box;
     display: -ms-flexbox;

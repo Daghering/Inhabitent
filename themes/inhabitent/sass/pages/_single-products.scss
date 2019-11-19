@@ -1,75 +1,70 @@
 .taxonomy-product-type-header {
-    text-align: center;
-    
-    h1 {
-        font-size: 28px;
-        border-top: 1px solid lightgrey;
-        padding-top: 25px;
-        padding-bottom: 10px;
-    }
-    p {
-        font-size: 14px;
-        margin-bottom: 35px;
-    }
+  text-align: center;
 
+  h1 {
+    font-size: 28px;
+    border-top: 1px solid lightgrey;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
 }
 
-
 .single-products-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    border-top: 2px solid #e1e1e1;
-    padding: 50px;
-    height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-top: 2px solid #e1e1e1;
+  padding: 50px;
+  height: 350px;
 
-    h2 {
+  h2 {
     color: #d99054;
     font-family: 'Novecento-Sans-bold';
     font-size: 24px;
     padding-bottom: 0px;
     padding-top: 0px;
+  }
 
-    }
-
-    img {
-        height: 300px;
-    }
+  img {
+    height: 300px;
+  }
 }
 
 .single-product-image {
-    grid-column-start: 1;
-    
+  grid-column-start: 1;
 }
 
 .single-product-description {
-    grid-column-start: 2;
-    margin-left: 50px;
-    font-size: 14px;
+  grid-column-start: 2;
+  margin-left: 50px;
+  font-size: 14px;
 
-    span {
-        font-family: 'Novecento-Sans';
-        // padding-bottom: 15px;
-        font-size: 19px;
-    }
+  span {
+    font-family: 'Novecento-Sans';
+    // padding-bottom: 15px;
+    font-size: 19px;
+  }
 
-    p {
-        padding-top: 10px;
+  p {
+    padding-top: 10px;
+  }
+  .products-social {
+    display: flex;
+    padding: 15px;
+    padding-top: 25px;
+    padding-left: 0px;
+
+    button {
+      border: 1px solid black;
+      background: none;
+
+      li {
+        padding: 5px;
+      }
     }
-    .products-social {
-        display: flex;
-        padding: 15px;
-        padding-top: 25px;
-        padding-left: 0px;
-    
-        button {
-            border:1px solid black;
-            background:none;
-            
-            li {
-                padding: 5px;
-            }
-        }
-    }
-      
+  }
 }

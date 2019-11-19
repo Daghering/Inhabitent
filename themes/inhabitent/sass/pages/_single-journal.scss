@@ -4,7 +4,6 @@
   grid-template-rows: 1fr;
   border-top: 2px solid #e1e1e1;
 
-
   h2 {
     font-family: 'Novecento-Sans-bold';
     font-weight: bold;
@@ -12,28 +11,27 @@
     position: absolute;
     margin-top: 30px;
     padding: 10px;
-    background-color: #248A83;
+    background-color: #248a83;
     color: white;
     text-transform: uppercase;
-   }
+  }
 
-   h3 {
-    
-      font-family: 'Novecento-Sans-bold';
-      font-weight: bold;
-      font-size: 12px;
-      position: absolute;
-      padding: 10px;
-      background-color: #248A83;
-      color: white;
-      text-transform: uppercase;
-     margin-left: 507.7px;
-     margin-top: -50.5px;
-   }
+  h3 {
+    font-family: 'Novecento-Sans-bold';
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    padding: 10px;
+    background-color: #248a83;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 507.7px;
+    margin-top: -50.5px;
+  }
 
-   p {
-       grid-column-start: 1;
-   }
+  p {
+    grid-column-start: 1;
+  }
 }
 
 .single-journal-content {
@@ -50,8 +48,8 @@
     padding-top: 10x;
   }
 
-  span { 
-   color: #248A83;
+  span {
+    color: #248a83;
   }
 
   .single-journal-tags {
@@ -61,7 +59,4 @@
       padding-right: 20px;
     }
   }
-
-  
 }
-

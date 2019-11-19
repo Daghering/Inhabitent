@@ -21,7 +21,7 @@
 <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
 <?php echo category_description($term->term_id);?>
- <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>">
+ <a href="<?php echo get_home_url() . '/product-type/' . $term->slug;?>">
  <button><?php echo $term->name ;?></button></a>
 </div>
 
