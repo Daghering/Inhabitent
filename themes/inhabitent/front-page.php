@@ -50,7 +50,7 @@
 
     <!-- Blog posts -->
     <?php
-    $args = array('numberposts' => 3, 'order'=> 'ASC', 'orderby' =>'date');
+    $args = array('numberposts' => 3, 'order'=> 'DSC', 'orderby' =>'date');
     $postslist = get_posts($args);
     // print_r($postslist);
     foreach ($postslist as $post) : setup_postdata($post); ?>
