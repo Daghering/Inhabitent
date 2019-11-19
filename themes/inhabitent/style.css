@@ -550,6 +550,8 @@ button {
   grid-gap: 15px;
   padding: 50px;
   padding-top: 25px; }
+  .products h2 {
+    text-transform: none; }
   .products img {
     height: 180px;
     width: 100%;
