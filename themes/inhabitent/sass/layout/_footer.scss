@@ -9,15 +9,10 @@ footer {
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 3fr 1fr;
-  
 
   h1 {
     color: #d99054;
   }
-
-  //  img {
-  //      justify-items: center;
-  //  }
 }
 
 .contact {
@@ -25,7 +20,7 @@ footer {
   justify-items: center;
   align-items: center;
   line-height: 2em;
-  
+
   span {
     color: white;
   }
@@ -43,11 +38,10 @@ footer {
   line-height: 2em;
 
   p {
-    span{
+    span {
       font-weight: bold;
     }
   }
-
 }
 
 .footer-icon {
@@ -65,5 +59,4 @@ footer {
   grid-column-end: 5;
   grid-row-start: 2;
   margin-right: 10px;
-
 }
