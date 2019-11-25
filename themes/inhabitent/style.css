@@ -579,7 +579,8 @@ button {
       font-size: 12px;
       font-family: 'Merriweather-light';
       padding: 5px;
-      padding-top: 0px; }
+      padding-top: 0px;
+      text-transform: none; }
   .product-posts hr {
     border: 1px dotted;
     color: black;

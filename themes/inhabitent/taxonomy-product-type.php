@@ -31,7 +31,7 @@ $output = str_replace($healthy, $yummy, $phrase);?>
      <div class = "title-price">  
       
     <h2><?php the_title(); ?></h2>
-    <h2><?php echo "$ " . get_field('price'); ?></h2></a>
+    <h2 id = "taxonomy-products-name"><?php echo "$ " . get_field('price'); ?></h2></a>
     </div>
     </figcaption>
 
